@@ -46,9 +46,9 @@ const MyFooter = () => {
           </div>
         </div>
         <Footer.Divider />
-        <div className="w-full flex justify-round p-4 sm:flex sm:items-center sm:justify-between">
+        <div className="w-full flex justify-between flex-row sm:flex-col justify-round p-4 sm:flex sm:items-center sm:justify-between">
           <Footer.Copyright href="#" by="Flowbite™" year={2022} />
-          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+          <div className=" flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="#" icon={BsFacebook} />
             <Footer.Icon href="#" icon={BsInstagram} />
             <Footer.Icon href="#" icon={BsTwitter} />
