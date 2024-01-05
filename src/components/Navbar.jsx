@@ -78,7 +78,7 @@ const Navbar = () => {
 
             <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
                     {
-                        navItems.map(({link,path}) => <Link key={path} to={path} spy={true} smooth={true} offset={-100} className='block text-base text-white hover:text-brandPrimary first:font-medium' >{link}</Link> )
+                        navItems.map(({link,path}) => <Link key={path} to={path} spy={true} smooth={true} offset={-100} className='block text-base text-white h-10 hover:ml-[90px] hover:scale-125 hover:font-semibold duration-300 first:font-medium' >{link}</Link> )
                     }
             </div>
           </nav>
