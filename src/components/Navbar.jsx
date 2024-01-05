@@ -64,7 +64,7 @@ const Navbar = () => {
                         Sign up
                     </button>
                 </div>
-                <div className='md:hidden'>
+                <div className='md:hidden lg:hidden'>
                         <button
                             onClick={toggleMenu} 
                             className='text-neutralDGrey focus:outline-none focus:text-gray-500 '>
@@ -76,7 +76,7 @@ const Navbar = () => {
 
             </div>
 
-            <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
+            <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary lg:hidden ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
                     {
                         navItems.map(({link,path}) => <Link key={path} to={path} spy={true} smooth={true} offset={-100} className='block text-base text-white h-10 hover:ml-[90px] hover:scale-125 hover:font-semibold duration-300 first:font-medium' >{link}</Link> )
                     }
