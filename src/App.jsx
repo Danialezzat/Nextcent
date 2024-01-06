@@ -16,7 +16,7 @@ function App() {
   
 
   return (
-    <>
+    <div className='flex flex-col'>
       <Navbar />
       <Home />
       <Services />
@@ -25,7 +25,7 @@ function App() {
       <Blog />
       <Newsletter />
       <MyFooter />
-    </>
+    </div>
   )
 }
 
